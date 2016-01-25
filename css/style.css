@@ -1,0 +1,164 @@
+* {
+   border: 1px dotted red !important;
+}
+#body{
+	overflow: auto;
+}
+#container{
+	background: #ccc;
+	/*position: relative;*/
+	height: 1200px;
+	/*overflow: auto;*/
+}
+header{
+	background: #c83;
+	position: fixed;
+	top: 0;
+	/*width: 100%;*/
+	height: 47px;
+}
+#container, header{
+	left: 28px;
+	right: 5px;
+}
+
+#banner{
+	background: #55e;
+	height: 70px;
+	margin-top: 50px;
+}
+#main{
+	/*padding: 0 120px;*/
+	padding: 10px 120px;
+}
+
+article{
+	position: relative;
+}
+.article-header{
+	background: #5d8;
+	height: 120px;
+}
+
+#article-image1{
+	width: 100%;
+}
+#article-image2{
+	display: block;
+	float: left;
+}
+#article-options{
+	background: #38d;
+	float: left;
+	/*position: relative;*/
+	/*right: 92%;*/
+	/*position: absolute;*/
+	/*left: 0%;*/
+	/*top: 50%;*/
+	/*right: 5%;*/
+	width: 80px;
+	/*clear: none;*/
+}
+.article-content{
+	float: left;
+	width: 640px;
+	/*clear: left;*/
+	/*clear: right;*/
+	/*position: absolute;*/
+	/*display: inline-block;*/
+	/*left: 8%;*/
+	/*right: 35%;*/
+	/*clear: both;*/
+}
+.article-text{
+	/*clear: left;*/
+}
+#article-theory{
+	overflow: hidden;
+	/*background: #38d;*/
+	position: relative;
+	width: 950px;
+	left: -50px;
+	padding: 0 0;
+	margin: 0 0;
+}
+.theory-background{
+	/*width: 100%;*/
+	overflow: hidden;
+	/*height: 500px;*/
+	background-image: url("../img/inflation-945.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: blue;
+	/*float: left;*/
+}
+.theory-rows{
+	/*margin-top: 150px;*/
+	overflow: hidden;
+	position: relative;
+}
+.theory-row1{
+	margin-top: 150px;
+}
+.theory-row2{
+	margin-top: 140px;
+}
+.theory-text{
+	/*position: relative;*/
+	/*display: inline;*/
+	padding: 0 0;
+	margin: 0 0;
+	float: left;
+	/*clear: left;*/
+	width: 24%;
+	height: 130px;
+}
+#article-image2{
+	width: 100%;
+}
+
+#other-articles{
+	clear: both;
+}
+#space, #recommended{
+	float: left;
+	width: 720px;
+}
+#space h2, #recommended h2{
+	float: left;
+}
+.go-to{
+	float: right;
+}
+.article-list{
+	clear: both;
+	/*overflow: hidden;*/
+}
+.article-list-col{
+	float: left;
+	width: 33%;
+	height: 100%;
+}
+.article-link{
+	/*float: left;*/
+	display: block;
+	margin: 10px 10px;
+	width: 100%;
+	/*height: 33.3%;*/
+	height: 200px;
+	/*background: url(../img/21PLANET-mediumThreeByTwo210-v3.jpg) no-repeat 6px top;*/
+}
+/*.article-link img{
+	display: block;
+	margin: 0 auto;
+}*/
+#trending{
+	float: right;
+	width: 320px;
+}
+#recommended{
+	/*float: left;*/
+
+}
+
+
