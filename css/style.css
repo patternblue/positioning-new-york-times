@@ -1,5 +1,26 @@
 * {
-   border: 1px dotted red !important;
+   /*border: 1px dotted red !important;*/
+}
+a{
+	color: #222;
+	text-decoration: none;
+}
+a:hover{
+	color:#00A0C6; 
+	text-decoration:none; 
+	cursor:pointer;  
+}
+
+h2{
+	/*font-weight: bold;*/
+}
+h3{
+	/*font-weight: bold;*/
+}
+h4{
+	/*font-weight: bold;*/
+	font: bold 14px serif;
+
 }
 #body{
 	overflow: auto;
@@ -16,12 +37,24 @@ header{
 	top: 0;
 	/*width: 100%;*/
 	height: 47px;
+	border-bottom: thin solid #000;
 }
 #container, header{
 	left: 28px;
 	right: 5px;
 }
-
+.header-left{
+	float: left;
+}
+header .logo{
+	font-size: 20px;
+	float: left;
+	position: relative;
+	left: 30%;
+}
+.header-right{
+	float: right;
+}
 #banner{
 	background: #55e;
 	height: 70px;
@@ -34,12 +67,22 @@ header{
 
 article{
 	position: relative;
+	border-top: thin solid #000;
+
 }
 .article-header{
-	background: #5d8;
+	/*background: #5d8;*/
 	height: 120px;
 }
-
+.article-header .subject{
+	/*font-weight: bold;*/
+}
+.article-title{
+	/*padding-top: 20px;*/
+	line-height: 2.375rem;
+	font: italic 36px georgia, times, serif;
+	border-bottom: thin solid #999;
+}
 #article-image1{
 	width: 100%;
 }
@@ -160,5 +203,36 @@ article{
 	/*float: left;*/
 
 }
+footer{
+	background: #aae;
+	clear: both;
 
+}
 
+footer .col{
+	float: left;
+	/*width: 160px;*/
+	width: 16%;
+}
+
+.subscribe2 li, .subscribe3 li{
+	font-size: 9px;
+}
+
+.nav-footer{
+	clear: both;
+}
+.nav-footer-left{
+	float: left;
+	width: 65%;
+}
+.nav-footer-right{
+	float: right;
+}
+.nav-footer li{
+	float: left;
+	/*display: inline;*/
+    font-size: 10px;
+    color: #999;
+    padding: 0 5px;
+}
