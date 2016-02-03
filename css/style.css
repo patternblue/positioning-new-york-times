@@ -2,13 +2,18 @@
    /*border: 1px dotted red !important;*/
 }
 a{
+	/*color: #808080;*/
 	color: #222;
 	text-decoration: none;
 }
 a:hover{
-	color:#00A0C6; 
-	text-decoration:none; 
+	color:#0080a6; 
+	text-decoration: underline; 
 	cursor:pointer;  
+}
+
+strong{
+	font-weight: bold;
 }
 
 h2{
@@ -19,24 +24,29 @@ h3{
 }
 h4{
 	/*font-weight: bold;*/
-	font: bold 14px serif;
+	font: bold 20px serif;
 
 }
 #body{
 	overflow: auto;
 }
 #container{
-	background: #ccc;
+	/*background: #ccc;*/
 	/*position: relative;*/
 	height: 1200px;
 	/*overflow: auto;*/
 }
 header{
-	background: #c83;
+	/*background: #c83;*/
+	background: url("../img/new-york-times-logo.png") no-repeat ;
+	/*background-size: contain;*/
+	background-size: 200px 120px;
+	background-position: 50% 45%;
 	position: fixed;
 	top: 0;
 	/*width: 100%;*/
-	height: 47px;
+	/*height: 47px;*/
+	padding: 13px 0;
 	border-bottom: thin solid #000;
 }
 #container, header{
@@ -56,7 +66,7 @@ header .logo{
 	float: right;
 }
 #banner{
-	background: #55e;
+	/*background: #55e;*/
 	height: 70px;
 	margin-top: 50px;
 }
@@ -72,16 +82,22 @@ article{
 }
 .article-header{
 	/*background: #5d8;*/
-	height: 120px;
-}
-.article-header .subject{
-	/*font-weight: bold;*/
+	/*height: 140px;*/
+	margin-bottom: 20px;
 }
 .article-title{
 	/*padding-top: 20px;*/
-	line-height: 2.375rem;
-	font: italic 36px georgia, times, serif;
-	border-bottom: thin solid #999;
+	/*line-height: 2.375rem;*/
+
+	font: italic 2.125rem georgia, serif;
+	border-bottom: thin solid #ddd;
+	padding-bottom: 10px;
+}
+#article-meta{
+	font-size: 0.6875rem;
+	font-weight: 300;
+	font-style: normal;
+	font-family: georgia;
 }
 #article-image1{
 	width: 100%;
@@ -90,21 +106,37 @@ article{
 	display: block;
 	float: left;
 }
+.caption{
+	font-size: 0.8125rem;
+	color: #333;
+}
+.credits{
+	font-size: 0.6875rem;
+	color: #555;
+	margin-bottom: 26px;
+}
+.video{
+	margin-bottom: 26px;	
+}
 #article-options{
-	background: #38d;
+	/*background: #38d;*/
 	float: left;
-	/*position: relative;*/
-	/*right: 92%;*/
-	/*position: absolute;*/
-	/*left: 0%;*/
-	/*top: 50%;*/
-	/*right: 5%;*/
 	width: 80px;
-	/*clear: none;*/
+
+}
+#article-options li{
+	font-family: arial, helvetica;
+	text-align: center;
+	padding: 10px;
+	border-bottom: thin solid #ccc;	
+}
+#article-options a{
+	color: #808080;
 }
 .article-content{
 	float: left;
 	width: 640px;
+	padding: 0 50px;
 	/*clear: left;*/
 	/*clear: right;*/
 	/*position: absolute;*/
@@ -114,7 +146,13 @@ article{
 	/*clear: both;*/
 }
 .article-text{
+/*	font-size: 1rem;
+	font-weight: 400;
+	font-style: normal;*/
+	/*line-height: 1.4375rem;*/
+	font: normal normal 400 1rem/1.4375rem georgia, serif;
 	/*clear: left;*/
+	/*padding: 0 26px;*/
 }
 #article-theory{
 	overflow: hidden;
@@ -122,8 +160,10 @@ article{
 	position: relative;
 	width: 950px;
 	left: -50px;
-	padding: 0 0;
-	margin: 0 0;
+	border-top: thin solid #ccc;
+	border-bottom: thin solid #ccc;
+	padding: 13px 0;
+	margin: 13px 0;
 }
 .theory-background{
 	/*width: 100%;*/
@@ -156,21 +196,46 @@ article{
 	width: 24%;
 	height: 130px;
 }
+#article-theory .credits{
+	margin-top: 26px;
+	margin-bottom: 10px;
+}
 #article-image2{
 	width: 100%;
 }
 
+#article-footer{
+    color: #999;
+	font-family: arial, helvetica;
+	font-size: 11px;
+	padding: 26px 0;
+}
 #other-articles{
 	clear: both;
+}
+#other-articles .section{
+	border-top: thin solid #ddd;
+	padding-top: 13px;
+	padding-bottom: 26px;
 }
 #space, #recommended{
 	float: left;
 	width: 720px;
 }
-#space h2, #recommended h2{
+#space h4, #recommended h4{
 	float: left;
 }
-.go-to{
+.go-to, #trending a{
+	color: #0080a6; 
+}
+#trending ol{
+	list-style-type: decimal;
+}
+#trending li{
+	border-bottom: thin solid #ddd;
+	padding: 5px 0;
+}
+#space .go-to, #recommended .go-to{
 	float: right;
 }
 .article-list{
@@ -204,15 +269,23 @@ article{
 
 }
 footer{
-	background: #aae;
+	border-top: medium double #ddd;
+	/*background: #aae;*/
 	clear: both;
-
+	padding-top: 7px;
 }
 
 footer .col{
 	float: left;
+	font-family: arial, helvetica;
 	/*width: 160px;*/
 	width: 16%;
+}
+footer h4{
+	font-family: inherit;
+}
+footer li{
+	padding: 2px 0;
 }
 
 .subscribe2 li, .subscribe3 li{
@@ -221,6 +294,8 @@ footer .col{
 
 .nav-footer{
 	clear: both;
+	border-top: thin solid #ddd;
+	padding: 15px;
 }
 .nav-footer-left{
 	float: left;
