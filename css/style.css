@@ -1,8 +1,9 @@
 * {
    /*border: 1px dotted red !important;*/
 }
+
+/*misc*/
 a{
-	/*color: #808080;*/
 	color: #222;
 	text-decoration: none;
 }
@@ -11,43 +12,41 @@ a:hover{
 	text-decoration: underline; 
 	cursor:pointer;  
 }
-
 strong{
 	font-weight: bold;
 }
-
-h2{
-	/*font-weight: bold;*/
-}
-h3{
-	/*font-weight: bold;*/
-}
 h4{
-	/*font-weight: bold;*/
 	font: bold 20px serif;
-
 }
+h5{
+	font: bold 16px arial, serif;
+}
+/*all captions and credits*/
+.caption{
+	font-size: 0.8125rem;
+	color: #333;
+}
+.credits{
+	font-size: 0.6875rem;
+	color: #777;
+	margin-bottom: 26px;
+}
+/*sections*/
 #body{
 	overflow: auto;
 }
 #container{
-	/*background: #ccc;*/
-	/*position: relative;*/
 	height: 1200px;
-	/*overflow: auto;*/
 }
+
+/*header*/
 header{
-	/*background: #c83;*/
-	background: url("../img/new-york-times-logo.png") no-repeat ;
-	/*background-size: contain;*/
-	background-size: 200px 120px;
-	background-position: 50% 45%;
+    background: #fff;
 	position: fixed;
 	top: 0;
-	/*width: 100%;*/
-	/*height: 47px;*/
-	padding: 13px 0;
-	border-bottom: thin solid #000;
+	padding: 7px 0;
+	border-bottom: thin solid #ccc;
+	z-index: 15;
 }
 #container, header{
 	left: 28px;
@@ -57,38 +56,55 @@ header{
 	float: left;
 }
 header .logo{
-	font-size: 20px;
-	float: left;
+	width: 14%;
 	position: relative;
-	left: 30%;
+	left: 27%;
+	top: 2px;
 }
 .header-right{
 	float: right;
 }
+header button{
+	float: left;
+	background-color: transparent;
+	margin-left: 7px;
+	height: 30px;
+	font-weight: 700;
+	color: #333;
+	font-family: arial, helvetica, sans-serif;
+	border: none;
+	border-radius: 3px;
+}
+header button:hover{
+	background-color: #f4f4f4;
+}
+header .sections{
+	border: 1px solid #ccc;
+}
+
+/*banner*/
 #banner{
-	/*background: #55e;*/
 	height: 70px;
 	margin-top: 50px;
 }
+
+/*main*/
 #main{
-	/*padding: 0 120px;*/
+	position: relative;
 	padding: 10px 120px;
+	z-index: 1;
 }
 
+/*article*/
 article{
 	position: relative;
 	border-top: thin solid #000;
-
 }
 .article-header{
-	/*background: #5d8;*/
-	/*height: 140px;*/
+	margin-top: 8px;
 	margin-bottom: 20px;
 }
 .article-title{
-	/*padding-top: 20px;*/
-	/*line-height: 2.375rem;*/
-
 	font: italic 2.125rem georgia, serif;
 	border-bottom: thin solid #ddd;
 	padding-bottom: 10px;
@@ -106,20 +122,12 @@ article{
 	display: block;
 	float: left;
 }
-.caption{
-	font-size: 0.8125rem;
-	color: #333;
-}
-.credits{
-	font-size: 0.6875rem;
-	color: #555;
-	margin-bottom: 26px;
-}
+
 .video{
 	margin-bottom: 26px;	
 }
+
 #article-options{
-	/*background: #38d;*/
 	float: left;
 	width: 80px;
 
@@ -137,26 +145,12 @@ article{
 	float: left;
 	width: 640px;
 	padding: 0 50px;
-	/*clear: left;*/
-	/*clear: right;*/
-	/*position: absolute;*/
-	/*display: inline-block;*/
-	/*left: 8%;*/
-	/*right: 35%;*/
-	/*clear: both;*/
 }
 .article-text{
-/*	font-size: 1rem;
-	font-weight: 400;
-	font-style: normal;*/
-	/*line-height: 1.4375rem;*/
 	font: normal normal 400 1rem/1.4375rem georgia, serif;
-	/*clear: left;*/
-	/*padding: 0 26px;*/
 }
 #article-theory{
 	overflow: hidden;
-	/*background: #38d;*/
 	position: relative;
 	width: 950px;
 	left: -50px;
@@ -166,17 +160,13 @@ article{
 	margin: 13px 0;
 }
 .theory-background{
-	/*width: 100%;*/
 	overflow: hidden;
-	/*height: 500px;*/
 	background-image: url("../img/inflation-945.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: blue;
-	/*float: left;*/
 }
 .theory-rows{
-	/*margin-top: 150px;*/
 	overflow: hidden;
 	position: relative;
 }
@@ -187,12 +177,9 @@ article{
 	margin-top: 140px;
 }
 .theory-text{
-	/*position: relative;*/
-	/*display: inline;*/
 	padding: 0 0;
 	margin: 0 0;
 	float: left;
-	/*clear: left;*/
 	width: 24%;
 	height: 130px;
 }
@@ -203,13 +190,14 @@ article{
 #article-image2{
 	width: 100%;
 }
-
 #article-footer{
-    color: #999;
+    color: #777;
 	font-family: arial, helvetica;
 	font-size: 11px;
 	padding: 26px 0;
 }
+
+/*other articles */
 #other-articles{
 	clear: both;
 }
@@ -240,7 +228,6 @@ article{
 }
 .article-list{
 	clear: both;
-	/*overflow: hidden;*/
 }
 .article-list-col{
 	float: left;
@@ -248,37 +235,30 @@ article{
 	height: 100%;
 }
 .article-link{
-	/*float: left;*/
 	display: block;
 	margin: 10px 10px;
 	width: 100%;
-	/*height: 33.3%;*/
 	height: 200px;
-	/*background: url(../img/21PLANET-mediumThreeByTwo210-v3.jpg) no-repeat 6px top;*/
 }
-/*.article-link img{
-	display: block;
-	margin: 0 auto;
-}*/
 #trending{
 	float: right;
 	width: 320px;
 }
-#recommended{
-	/*float: left;*/
 
-}
+/*footer*/
 footer{
 	border-top: medium double #ddd;
-	/*background: #aae;*/
 	clear: both;
 	padding-top: 7px;
 }
-
+footer .logo{
+	width: 16%;
+	display: block;
+	margin-bottom: 20px;
+}
 footer .col{
 	float: left;
 	font-family: arial, helvetica;
-	/*width: 160px;*/
 	width: 16%;
 }
 footer h4{
@@ -287,11 +267,11 @@ footer h4{
 footer li{
 	padding: 2px 0;
 }
-
 .subscribe2 li, .subscribe3 li{
 	font-size: 9px;
 }
 
+/*nav footer*/
 .nav-footer{
 	clear: both;
 	border-top: thin solid #ddd;
@@ -306,7 +286,6 @@ footer li{
 }
 .nav-footer li{
 	float: left;
-	/*display: inline;*/
     font-size: 10px;
     color: #999;
     padding: 0 5px;
